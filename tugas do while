@@ -1,0 +1,45 @@
+/*Do-while digunakan saat melakukan perulangan
+if else digunakan saat melakukan percabangan
+
+*/
+#include<iostream>
+using namespace std;
+
+int main()
+
+{
+	string a;
+	int pil;
+	double sisi,alas,tinggi,luas,keliling;
+	do{
+		cout<<"mencari luas dan keliling segitiga sama sisi\n";
+		cout<<"1. Mencari luas\n2. Mencari kelilings\n";
+		cout<<"Masukan pilihan   :  ";
+		cin>>pil;fflush(stdin);
+		if (pil == 1){
+			cout<<"mencari luas segitiga sama sisi\n";
+			cout<<"masukan alas    :  ";
+			cin>>alas;fflush(stdin);
+			cout<<"masukan tinggi  :  ";
+			cin>>tinggi;fflush(stdin);
+			luas = alas * tinggi/2;
+			cout<<"luas segitiga adalah "<<luas<<"cm^2\n";}
+			
+			else if (pil == 2){
+				cout<<"mencari keliling segitiga sama sisi\n";
+				cout<<"masukan sisi : ";
+				cin>>sisi;fflush(stdin);
+				keliling = 3 * sisi;
+				cout<<"keliling segitiga adalah "<<keliling<<"cm\n";
+				
+			}
+			else cout<<"input tidak ada\n";
+			cout<<"ingin menjumlah ulang?(Y/T)  : ";
+			getline(cin,a);
+			cout<<"\n\n";
+			}
+			while(a!="z");
+			return 0;
+			
+		
+}
